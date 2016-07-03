@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Here's all your posts:</title>
+  </head>
+  <body>
+    <p>Chat screen for MYUSERNAME <span class="lang">LANGUAGEHERE</span></p>
+    <hr>
+    <table border="1">
+      <col style="width:10%">
+      <col style="width:90%">
+      <tr><th>Username</th><th>Message</th></tr>
+      MESSAGESHERE
+    </table>
+    <hr>
+    <form action="crud_posts.php" method="post">
+      <input type="hidden" name="csrftoken" value="THETOKENGOESHERE"/>
+      <input type="text" name="post_message" placeholder="chat here"></input>
+      <button type="submit">Send</button>
+    </form>
+    <hr>
+    <form action="crud_posts.php" method="post">
+      <input type="hidden" name="logout" value="true"/>
+      <button type="submit">Logout</button>
+    </form>
+  </body>
+</html>
